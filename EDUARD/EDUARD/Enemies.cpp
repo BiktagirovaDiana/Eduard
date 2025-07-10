@@ -27,8 +27,7 @@ void Enemies::takeDamage(int weaponType, int ammoSpent) {
     int totalDamage = damagePerUnit * ammoSpent;
     EnemyHP -= totalDamage;
 
-    if (EnemyHP < 0)
-    {
+    if (EnemyHP < 0) {
         EnemyHP = 0;
     }
 }
@@ -47,8 +46,7 @@ int Enemies::getHP() const
 void Enemies::setHP(int hp)
 {
     EnemyHP = hp;
-    if (EnemyHP < 0)
-    {
+    if (EnemyHP < 0) {
         EnemyHP = 0;
     }
 }

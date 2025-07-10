@@ -1,11 +1,11 @@
 #include "Shop.h"
 #include <Windows.h>
 
-int Shop::Level = 1;
-int Shop::PriceGun = 800;
-int Shop::PriceCartridges = 500;
-int Shop::PriceGrenade = 1500;
-int Shop::PriceRPG = 2000;
+int Shop::level_ = 1;
+int Shop::priceGun_ = 800;
+int Shop::priceCartridges_ = 500;
+int Shop::priceGrenade_ = 1500;
+int Shop::priceRPG_ = 2000;
 
 void Shop::InfoShop()
 {
@@ -13,23 +13,23 @@ void Shop::InfoShop()
 
     // Патроны
     std::cout << Text::GetText("shop", "cartridgesTitle") << std::endl;
-    printf((Text::GetText("shop", "cartridgesPrice") + "\n").c_str(), PriceCartridges);
+    printf((Text::GetText("shop", "cartridgesPrice") + "\n").c_str(), priceCartridges_);
 
     // Гранаты
-    if (Level >= 2) {
+    if (level_ >= 2) {
         std::cout << Text::GetText("shop", "grenadesAvailable") << std::endl;
         std::cout << Text::GetText("shop", "grenadesCount") << std::endl;
-        printf((Text::GetText("shop", "grenadesPrice") + "\n").c_str(), PriceGrenade);
+        printf((Text::GetText("shop", "grenadesPrice") + "\n").c_str(), priceGrenade_);
     }
     else {
         std::cout << Text::GetText("shop", "grenadesLocked") << std::endl;
     }
 
     // РПГ
-    if (Level >= 4) {
+    if (level_ >= 4) {
         std::cout << Text::GetText("shop", "rpgAvailable") << std::endl;
         std::cout << Text::GetText("shop", "rpgCount") << std::endl;
-        printf((Text::GetText("shop", "rpgPrice") + "\n").c_str(), PriceRPG);
+        printf((Text::GetText("shop", "rpgPrice") + "\n").c_str(), priceRPG_);
     }
     else {
         std::cout << Text::GetText("shop", "rpgLocked") << std::endl;
@@ -72,8 +72,8 @@ void Shop::BuyOrNot()
 
 void Shop::BuyCartridges()
 {
-    if (PlayerController::getMoney() >= PriceCartridges) {
-        PlayerController::setMoney(PlayerController::getMoney() - PriceCartridges);
+    if (PlayerController::getMoney() >= priceCartridges_) {
+        PlayerController::setMoney(PlayerController::getMoney() - priceCartridges_);
         PlayerController::setGun(PlayerController::getGun() + 8);
         std::cout << Text::GetText("shop", "cartridgesBought") << std::endl;
     }
@@ -84,9 +84,9 @@ void Shop::BuyCartridges()
 
 void Shop::BuyGrenade()
 {
-    if (Level >= 2) {
-        if (PlayerController::getMoney() >= PriceGrenade) {
-            PlayerController::setMoney(PlayerController::getMoney() - PriceGrenade);
+    if (level_ >= 2) {
+        if (PlayerController::getMoney() >= priceGrenade_) {
+            PlayerController::setMoney(PlayerController::getMoney() - priceGrenade_);
             PlayerController::setGrenade(PlayerController::getGrenade() + 4);
             std::cout << Text::GetText("shop", "grenadesBought") << std::endl;
         }
@@ -98,9 +98,9 @@ void Shop::BuyGrenade()
 
 void Shop::BuyRPG()
 {
-    if (Level >= 4) {
-        if (PlayerController::getMoney() >= PriceRPG) {
-            PlayerController::setMoney(PlayerController::getMoney() - PriceRPG);
+    if (level_ >= 4) {
+        if (PlayerController::getMoney() >= priceRPG_) {
+            PlayerController::setMoney(PlayerController::getMoney() - priceRPG_);
             PlayerController::setRPG(PlayerController::getRPG() + 3);
             std::cout << Text::GetText("shop", "rpgBought") << std::endl;
         }

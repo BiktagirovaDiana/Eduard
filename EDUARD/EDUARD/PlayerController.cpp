@@ -1,22 +1,22 @@
 #include "PlayerController.h"
 #include <Windows.h>
 
-int PlayerController::Influence = 60;
-int PlayerController::HP = 100;
-int PlayerController::Money = 5000;
-int PlayerController::Gun = 9;
-int PlayerController::Grenade = 0;
-int PlayerController::RPG = 0;
+int PlayerController::influence_ = 60;
+int PlayerController::hp_ = 100;
+int PlayerController::money_ = 5000;
+int PlayerController::gun_ = 9;
+int PlayerController::grenade_ = 0;
+int PlayerController::rpg_ = 0;
 
 void PlayerController::InfoPlayer()
 {
-    if (HP <= 0) {
+    if (hp_ <= 0) {
         std::cout << Text::GetText("player", "lowHPWarning") << std::endl;
         GameManager::Lose();
         return;
     }
 
-    if (Influence < 30) {
+    if (influence_ < 30) {
         std::cout << Text::GetText("player", "lowInfluenceWarning") << std::endl;
         GameManager::Lose();
         return;
@@ -24,21 +24,21 @@ void PlayerController::InfoPlayer()
 
     // Вывод основной информации
     std::cout << Text::GetText("player", "statsTitle") << std::endl;
-    std::cout << Text::GetText("player", "influence") << " " << Influence << std::endl;
-    std::cout << Text::GetText("player", "hp") << " " << HP << std::endl;
-    std::cout << Text::GetText("player", "money") << " " << Money << std::endl;
+    std::cout << Text::GetText("player", "influence") << " " << influence_ << std::endl;
+    std::cout << Text::GetText("player", "hp") << " " << hp_ << std::endl;
+    std::cout << Text::GetText("player", "money") << " " << money_ << std::endl;
 
     // Вывод инвентаря
-    if (Gun > 0 || Grenade > 0 || RPG > 0) {
+    if (gun_ > 0 || grenade_ > 0 || rpg_ > 0) {
         std::cout << Text::GetText("player", "inventoryTitle") << std::endl;
-        if (Gun > 0) {
-            printf((Text::GetText("player", "gun") + "\n").c_str(), Gun);
+        if (gun_ > 0) {
+            printf((Text::GetText("player", "gun") + "\n").c_str(), gun_);
         }
-        if (Grenade > 0) {
-            printf((Text::GetText("player", "grenade") + "\n").c_str(), Grenade);
+        if (grenade_ > 0) {
+            printf((Text::GetText("player", "grenade") + "\n").c_str(), grenade_);
         }
-        if (RPG > 0) {
-            printf((Text::GetText("player", "rpg") + "\n").c_str(), RPG);
+        if (rpg_ > 0) {
+            printf((Text::GetText("player", "rpg") + "\n").c_str(), rpg_);
         }
     }
     else {
@@ -47,55 +47,55 @@ void PlayerController::InfoPlayer()
 }
 
 // Getters
-int PlayerController::getInfluence() { return Influence; }
-int PlayerController::getHP() { return HP; }
-int PlayerController::getMoney() { return Money; }
-int PlayerController::getGun() { return Gun; }
-int PlayerController::getGrenade() { return Grenade; }
-int PlayerController::getRPG() { return RPG; }
+int PlayerController::getInfluence() { return influence_; }
+int PlayerController::getHP() { return hp_; }
+int PlayerController::getMoney() { return money_; }
+int PlayerController::getGun() { return gun_; }
+int PlayerController::getGrenade() { return grenade_; }
+int PlayerController::getRPG() { return rpg_; }
 
 // Setters
 int PlayerController::setInfluence(int x)
 {
-    Influence = x;
-    if (Influence < 30) {
-        printf((Text::GetText("player", "influenceWarning") + "\n").c_str(), Influence);
+    influence_ = x;
+    if (influence_ < 30) {
+        printf((Text::GetText("player", "influenceWarning") + "\n").c_str(), influence_);
         GameManager::Lose();
     }
-    return Influence;
+    return influence_;
 }
 
 int PlayerController::setHP(int x)
 {
-    HP = x;
-    if (HP <= 0) {
-        HP = 0;
+    hp_ = x;
+    if (hp_ <= 0) {
+        hp_ = 0;
         std::cout << Text::GetText("player", "lowHPWarning") << std::endl;
         GameManager::Lose();
     }
-    return HP;
+    return hp_;
 }
 
 int PlayerController::setMoney(int x)
 {
-    Money = x;
-    return Money;
+    money_ = x;
+    return money_;
 }
 
 int PlayerController::setGun(int x)
 {
-    Gun = x;
-    return Gun;
+    gun_ = x;
+    return gun_;
 }
 
 int PlayerController::setGrenade(int x)
 {
-    Grenade = x;
-    return Grenade;
+    grenade_ = x;
+    return grenade_;
 }
 
 int PlayerController::setRPG(int x)
 {
-    RPG = x;
-    return RPG;
+    rpg_ = x;
+    return rpg_;
 }

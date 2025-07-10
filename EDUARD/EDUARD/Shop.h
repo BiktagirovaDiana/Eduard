@@ -5,11 +5,11 @@
 class Shop
 {
 private:
-    static int Level;
-    static int PriceGun;
-    static int PriceCartridges;
-    static int PriceGrenade;
-    static int PriceRPG;
+    static int level_;
+    static int priceGun_;
+    static int priceCartridges_;
+    static int priceGrenade_;
+    static int priceRPG_;
 
 public:
     static void InfoShop();

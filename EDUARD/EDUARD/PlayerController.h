@@ -5,12 +5,12 @@
 class PlayerController
 {
 private:
-    static int Influence;
-    static int HP;
-    static int Money;
-    static int Gun;
-    static int Grenade;
-    static int RPG;
+    static int influence_;
+    static int hp_;
+    static int money_;
+    static int gun_;
+    static int grenade_;
+    static int rpg_;
 
 public:
     static void InfoPlayer();

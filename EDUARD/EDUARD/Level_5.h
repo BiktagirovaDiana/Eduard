@@ -26,6 +26,8 @@ public:
 	void AttackPlane();
 	void AttackPlane2();
 	void TrapStrategy();
+	//void NeutralPlace();
+	//void NeutralPlace2();
 	void TrapMargo();
 	void DeathMargo();
 	void Surveillance();

@@ -67,8 +67,7 @@ void Level_3::NoMeeting()
 
 void Level_3::Spy()
 {
-    if (PlayerController::getMoney() >= 700)
-    {
+    if (PlayerController::getMoney() >= 700) {
         PlayerController::setMoney(PlayerController::getMoney() - 700);
         PlayerController::InfoPlayer();
         int choice = 0;
@@ -91,8 +90,7 @@ void Level_3::Spy()
             break;
         }
     }
-    else
-    {
+    else {
         std::cout << Text::GetText("common", "beforeLose") << std::endl;
         GameManager::Lose();
     }
@@ -110,16 +108,14 @@ void Level_3::CleverSpy()
         Shooting();
         break;
     case 2:
-        if (PlayerController::getGun() >= 6)
-        {
+        if (PlayerController::getGun() >= 6) {
             PlayerController::setGun(PlayerController::getGun() - 6);
             enemy.takeDamage(1, 6);
             PlayerController::InfoPlayer();
             std::cout << Text::GetText("level3", "cleverSpy2") << std::endl;
             Laboratory();
         }
-        else
-        {
+        else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
             GameManager::Lose();
         }
@@ -133,8 +129,7 @@ void Level_3::CleverSpy()
 
 void Level_3::Shooting()
 {
-    if (PlayerController::getMoney() >= 1200)
-    {
+    if (PlayerController::getMoney() >= 1200) {
         PlayerController::setMoney(PlayerController::getMoney() - 1200);
         PlayerController::InfoPlayer();
 
@@ -147,29 +142,25 @@ void Level_3::Shooting()
         switch (choice)
         {
         case 1:
-            if (PlayerController::getGun() >= 6)
-            {
+            if (PlayerController::getGun() >= 6) {
                 PlayerController::setGun(PlayerController::getGun() - 6);
                 PlayerController::InfoPlayer();
                 enemy.takeDamage(1, 6);
                 Laboratory();
             }
-            else
-            {
+            else {
                 std::cout << Text::GetText("common", "defaultButton") << std::endl;
                 GameManager::Lose();
             }
             break;
         case 2:
-            if (PlayerController::getGrenade() >= 3)
-            {
+            if (PlayerController::getGrenade() >= 3) {
                 PlayerController::setGrenade(PlayerController::getGrenade() - 3);
                 enemy.takeDamage(2, 3);
                 PlayerController::InfoPlayer();
                 Laboratory();
             }
-            else
-            {
+            else {
                 std::cout << Text::GetText("common", "beforeLose") << std::endl;
                 GameManager::Lose();
             }
@@ -180,8 +171,7 @@ void Level_3::Shooting()
             break;
         }
     }
-    else
-    {
+    else {
         std::cout << Text::GetText("common", "beforeLose") << std::endl;
         GameManager::Lose();
     }
