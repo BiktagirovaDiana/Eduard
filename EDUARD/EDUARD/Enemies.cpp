@@ -1,7 +1,7 @@
 #include "Enemies.h"
 #include <iostream>
 
-Enemies::Enemies(int initialHP) : EnemyHP(initialHP) {}
+Enemies::Enemies(int initialHP) : enemyHP_(initialHP) {}
 
 
 void Enemies::takeDamage(int weaponType, int ammoSpent) {
@@ -25,29 +25,29 @@ void Enemies::takeDamage(int weaponType, int ammoSpent) {
 
 
     int totalDamage = damagePerUnit * ammoSpent;
-    EnemyHP -= totalDamage;
+    enemyHP_ -= totalDamage;
 
-    if (EnemyHP < 0) {
-        EnemyHP = 0;
+    if (enemyHP_ < 0) {
+        enemyHP_ = 0;
     }
 }
 
 void Enemies::applyTrapDamage()
 {
-    EnemyHP -= 20;
-    if (EnemyHP < 0) EnemyHP = 0;
+    enemyHP_ -= 20;
+    if (enemyHP_ < 0) enemyHP_ = 0;
 }
 
-int Enemies::getHP() const
+int Enemies::GetHP() const
 {
-    return EnemyHP;
+    return enemyHP_;
 }
 
-void Enemies::setHP(int hp)
+void Enemies::SetHP(int hp)
 {
-    EnemyHP = hp;
-    if (EnemyHP < 0) {
-        EnemyHP = 0;
+    enemyHP_ = hp;
+    if (enemyHP_ < 0) {
+        enemyHP_ = 0;
     }
 }
 

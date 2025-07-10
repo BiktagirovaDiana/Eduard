@@ -84,10 +84,10 @@ void Level_4::ImmediateAttack()
 {
     std::cout << Text::GetText("level4", "warning") << std::endl;
 
-    if (PlayerController::getGrenade() < 6 || PlayerController::getRPG() < 3) {
+    if (PlayerController::GetGrenade() < 6 || PlayerController::GetRPG() < 3) {
         shop.BuyOrNot();
 
-        if (PlayerController::getGrenade() < 6 || PlayerController::getRPG() < 3) {
+        if (PlayerController::GetGrenade() < 6 || PlayerController::GetRPG() < 3) {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
             GameManager::Lose();
             return;
@@ -101,8 +101,8 @@ void Level_4::ImmediateAttack()
     switch (choice)
     {
     case 1:
-        if (PlayerController::getRPG() >= 3) {
-            PlayerController::setRPG(PlayerController::getRPG() - 3);
+        if (PlayerController::GetRPG() >= 3) {
+            PlayerController::SetRPG(PlayerController::GetRPG() - 3);
             enemy.takeDamage(3, 3);
             std::cout << Text::GetText("level4", "policeWin") << std::endl;
             GameManager::Lose();
@@ -113,8 +113,8 @@ void Level_4::ImmediateAttack()
         }
         break;
     case 2:
-        if (PlayerController::getGrenade() >= 6) {
-            PlayerController::setGrenade(PlayerController::getGrenade() - 6);
+        if (PlayerController::GetGrenade() >= 6) {
+            PlayerController::SetGrenade(PlayerController::GetGrenade() - 6);
             enemy.takeDamage(6, 6);
             std::cout << Text::GetText("level4", "policeWin") << std::endl;
             GameManager::Lose();

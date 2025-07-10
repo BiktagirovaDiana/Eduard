@@ -47,15 +47,15 @@ void PlayerController::InfoPlayer()
 }
 
 // Getters
-int PlayerController::getInfluence() { return influence_; }
-int PlayerController::getHP() { return hp_; }
-int PlayerController::getMoney() { return money_; }
-int PlayerController::getGun() { return gun_; }
-int PlayerController::getGrenade() { return grenade_; }
-int PlayerController::getRPG() { return rpg_; }
+int PlayerController::GetInfluence() { return influence_; }
+int PlayerController::GetHP() { return hp_; }
+int PlayerController::GetMoney() { return money_; }
+int PlayerController::GetGun() { return gun_; }
+int PlayerController::GetGrenade() { return grenade_; }
+int PlayerController::GetRPG() { return rpg_; }
 
 // Setters
-int PlayerController::setInfluence(int x)
+int PlayerController::SetInfluence(int x)
 {
     influence_ = x;
     if (influence_ < 30) {
@@ -65,7 +65,7 @@ int PlayerController::setInfluence(int x)
     return influence_;
 }
 
-int PlayerController::setHP(int x)
+int PlayerController::SetHP(int x)
 {
     hp_ = x;
     if (hp_ <= 0) {
@@ -76,25 +76,25 @@ int PlayerController::setHP(int x)
     return hp_;
 }
 
-int PlayerController::setMoney(int x)
+int PlayerController::SetMoney(int x)
 {
     money_ = x;
     return money_;
 }
 
-int PlayerController::setGun(int x)
+int PlayerController::SetGun(int x)
 {
     gun_ = x;
     return gun_;
 }
 
-int PlayerController::setGrenade(int x)
+int PlayerController::SetGrenade(int x)
 {
     grenade_ = x;
     return grenade_;
 }
 
-int PlayerController::setRPG(int x)
+int PlayerController::SetRPG(int x)
 {
     rpg_ = x;
     return rpg_;

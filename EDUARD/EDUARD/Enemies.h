@@ -3,14 +3,14 @@
 class Enemies
 {
 private:
-    int EnemyHP;
+    int enemyHP_;
 
 public:
 
     Enemies(int initialHP);
 
     void takeDamage(int weaponType, int ammoSpent);
-    int getHP() const;
-    void setHP(int hp);
+    int GetHP() const;
+    void SetHP(int hp);
     void applyTrapDamage();
 };

@@ -67,8 +67,8 @@ void Level_3::NoMeeting()
 
 void Level_3::Spy()
 {
-    if (PlayerController::getMoney() >= 700) {
-        PlayerController::setMoney(PlayerController::getMoney() - 700);
+    if (PlayerController::GetMoney() >= 700) {
+        PlayerController::SetMoney(PlayerController::GetMoney() - 700);
         PlayerController::InfoPlayer();
         int choice = 0;
         std::cout << Text::GetText("level3", "spy") << std::endl;
@@ -108,8 +108,8 @@ void Level_3::CleverSpy()
         Shooting();
         break;
     case 2:
-        if (PlayerController::getGun() >= 6) {
-            PlayerController::setGun(PlayerController::getGun() - 6);
+        if (PlayerController::GetGun() >= 6) {
+            PlayerController::SetGun(PlayerController::GetGun() - 6);
             enemy.takeDamage(1, 6);
             PlayerController::InfoPlayer();
             std::cout << Text::GetText("level3", "cleverSpy2") << std::endl;
@@ -129,8 +129,8 @@ void Level_3::CleverSpy()
 
 void Level_3::Shooting()
 {
-    if (PlayerController::getMoney() >= 1200) {
-        PlayerController::setMoney(PlayerController::getMoney() - 1200);
+    if (PlayerController::GetMoney() >= 1200) {
+        PlayerController::SetMoney(PlayerController::GetMoney() - 1200);
         PlayerController::InfoPlayer();
 
         shop.BuyOrNot();
@@ -142,8 +142,8 @@ void Level_3::Shooting()
         switch (choice)
         {
         case 1:
-            if (PlayerController::getGun() >= 6) {
-                PlayerController::setGun(PlayerController::getGun() - 6);
+            if (PlayerController::GetGun() >= 6) {
+                PlayerController::SetGun(PlayerController::GetGun() - 6);
                 PlayerController::InfoPlayer();
                 enemy.takeDamage(1, 6);
                 Laboratory();
@@ -154,8 +154,8 @@ void Level_3::Shooting()
             }
             break;
         case 2:
-            if (PlayerController::getGrenade() >= 3) {
-                PlayerController::setGrenade(PlayerController::getGrenade() - 3);
+            if (PlayerController::GetGrenade() >= 3) {
+                PlayerController::SetGrenade(PlayerController::GetGrenade() - 3);
                 enemy.takeDamage(2, 3);
                 PlayerController::InfoPlayer();
                 Laboratory();

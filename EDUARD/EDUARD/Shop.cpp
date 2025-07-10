@@ -72,9 +72,9 @@ void Shop::BuyOrNot()
 
 void Shop::BuyCartridges()
 {
-    if (PlayerController::getMoney() >= priceCartridges_) {
-        PlayerController::setMoney(PlayerController::getMoney() - priceCartridges_);
-        PlayerController::setGun(PlayerController::getGun() + 8);
+    if (PlayerController::GetMoney() >= priceCartridges_) {
+        PlayerController::SetMoney(PlayerController::GetMoney() - priceCartridges_);
+        PlayerController::SetGun(PlayerController::GetGun() + 8);
         std::cout << Text::GetText("shop", "cartridgesBought") << std::endl;
     }
     else {
@@ -85,9 +85,9 @@ void Shop::BuyCartridges()
 void Shop::BuyGrenade()
 {
     if (level_ >= 2) {
-        if (PlayerController::getMoney() >= priceGrenade_) {
-            PlayerController::setMoney(PlayerController::getMoney() - priceGrenade_);
-            PlayerController::setGrenade(PlayerController::getGrenade() + 4);
+        if (PlayerController::GetMoney() >= priceGrenade_) {
+            PlayerController::SetMoney(PlayerController::GetMoney() - priceGrenade_);
+            PlayerController::SetGrenade(PlayerController::GetGrenade() + 4);
             std::cout << Text::GetText("shop", "grenadesBought") << std::endl;
         }
         else {
@@ -99,9 +99,9 @@ void Shop::BuyGrenade()
 void Shop::BuyRPG()
 {
     if (level_ >= 4) {
-        if (PlayerController::getMoney() >= priceRPG_) {
-            PlayerController::setMoney(PlayerController::getMoney() - priceRPG_);
-            PlayerController::setRPG(PlayerController::getRPG() + 3);
+        if (PlayerController::GetMoney() >= priceRPG_) {
+            PlayerController::SetMoney(PlayerController::GetMoney() - priceRPG_);
+            PlayerController::SetRPG(PlayerController::GetRPG() + 3);
             std::cout << Text::GetText("shop", "rpgBought") << std::endl;
         }
         else {
