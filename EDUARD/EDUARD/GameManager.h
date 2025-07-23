@@ -24,24 +24,24 @@ class GameManager
 public:
     static Shop shop;
 
-    static Level_1 Level1;
-    static Level_2 Level2;
-    static Level_3 Level3;
-    static Level_4 Level4;
-    static Level_5 Level5;
+    static Level_1 level1;
+    static Level_2 level2;
+    static Level_3 level3;
+    static Level_4 level4;
+    static Level_5 level5;
 
-    static void CompleteLevel1();
-    static void CompleteLevel2();
-    static void CompleteLevel3();
-    static void CompleteLevel4();
+    static void completeLevel1();
+    static void completeLevel2();
+    static void completeLevel3();
+    static void completeLevel4();
 
-    static void StartLevel1();
-    static void StartLevel2();
-    static void StartLevel3();
-    static void StartLevel4();
-    static void StartLevel5();
-    static void Win();
-    static void Lose();
+    static void startLevel1();
+    static void startLevel2();
+    static void startLevel3();
+    static void startLevel4();
+    static void startLevel5();
+    static void win();
+    static void lose();
 };
 
 

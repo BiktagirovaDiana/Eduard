@@ -9,15 +9,15 @@ class Shop;
 
 class Level_4
 {
-	int Killers = 0;
-	Shop& shop;
-	Enemies enemy;
-	int spent;
+	int killers_ = 0;
+	Shop& shop_;
+	Enemies enemy_;
+	int spent_;
 
 private:
-	Text Text;
+	Text text_;
 public:
-	Level_4(Shop& shopRef) : shop(shopRef), enemy(60), spent(0) {}
+	Level_4(Shop& shopRef) : shop_(shopRef), enemy_(60), spent_(0) {}
 	void StartLevel();
 	void PreparationForSearch();
 	void PreparationForSearch2();

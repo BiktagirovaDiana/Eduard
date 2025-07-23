@@ -5,7 +5,7 @@
 void Level_4::StartLevel()
 {
     int choice = 0;
-    PlayerController::InfoPlayer();
+    PlayerController::infoPlayer();
     std::cout << Text::GetText("level4", "helloPablo4") << std::endl;
     std::cin >> choice;
 
@@ -16,7 +16,7 @@ void Level_4::StartLevel()
         break;
     case 2:
         std::cout << Text::GetText("level4", "buyOff") << std::endl;
-        GameManager::Lose();
+        GameManager::lose();
         break;
     case 3:
         Raid();
@@ -40,7 +40,7 @@ void Level_4::PreparationForSearch()
         PreparationForSearch2();
         break;
     case 2:
-        GameManager::Lose();
+        GameManager::lose();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
@@ -55,8 +55,8 @@ void Level_4::PreparationForSearch2()
     std::cout << Text::GetText("level4", "peaceful2") << std::endl;
     std::cin >> choice;
     std::cout << Text::GetText("level4", "winPolice") << std::endl;
-    GameManager::Win();
-    GameManager::CompleteLevel4();
+    GameManager::win();
+    GameManager::completeLevel4();
 }
 
 void Level_4::Raid()
@@ -84,12 +84,12 @@ void Level_4::ImmediateAttack()
 {
     std::cout << Text::GetText("level4", "warning") << std::endl;
 
-    if (PlayerController::GetGrenade() < 6 || PlayerController::GetRPG() < 3) {
-        shop.BuyOrNot();
+    if (PlayerController::getGrenade() < 6 || PlayerController::getRPG() < 3) {
+        shop_.buyOrNot();
 
-        if (PlayerController::GetGrenade() < 6 || PlayerController::GetRPG() < 3) {
+        if (PlayerController::getGrenade() < 6 || PlayerController::getRPG() < 3) {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
             return;
         }
     }
@@ -101,27 +101,27 @@ void Level_4::ImmediateAttack()
     switch (choice)
     {
     case 1:
-        if (PlayerController::GetRPG() >= 3) {
-            PlayerController::SetRPG(PlayerController::GetRPG() - 3);
-            enemy.takeDamage(3, 3);
+        if (PlayerController::getRPG() >= 3) {
+            PlayerController::setRPG(PlayerController::getRPG() - 3);
+            enemy_.takeDamage(3, 3);
             std::cout << Text::GetText("level4", "policeWin") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 2:
-        if (PlayerController::GetGrenade() >= 6) {
-            PlayerController::SetGrenade(PlayerController::GetGrenade() - 6);
-            enemy.takeDamage(6, 6);
+        if (PlayerController::getGrenade() >= 6) {
+            PlayerController::setGrenade(PlayerController::getGrenade() - 6);
+            enemy_.takeDamage(6, 6);
             std::cout << Text::GetText("level4", "policeWin") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     default:
@@ -144,7 +144,7 @@ void Level_4::WaitRaid()
         break;
     case 2:
         std::cout << Text::GetText("level4", "fight") << std::endl;
-        GameManager::Lose();
+        GameManager::lose();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;

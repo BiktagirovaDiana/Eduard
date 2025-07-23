@@ -1,52 +1,52 @@
 #include "GameManager.h"
 
 Shop GameManager::shop;
-Level_1 GameManager::Level1(GameManager::shop);
-Level_2 GameManager::Level2(GameManager::shop);
-Level_3 GameManager::Level3(GameManager::shop);
-Level_4 GameManager::Level4(GameManager::shop);
-Level_5 GameManager::Level5(GameManager::shop);
+Level_1 GameManager::level1(GameManager::shop);
+Level_2 GameManager::level2(GameManager::shop);
+Level_3 GameManager::level3(GameManager::shop);
+Level_4 GameManager::level4(GameManager::shop);
+Level_5 GameManager::level5(GameManager::shop);
 
-void GameManager::StartLevel1() {
-    Level1.StartLevel();
+void GameManager::startLevel1() {
+    level1.startLevel();
 }
 
-void GameManager::StartLevel2() {
-    Level2.StartLevel();
+void GameManager::startLevel2() {
+    level2.startLevel();
 }
 
-void GameManager::StartLevel3() {
-    Level3.StartLevel();
+void GameManager::startLevel3() {
+    level3.startLevel();
 }
 
-void GameManager::StartLevel4() {
-    Level4.StartLevel();
+void GameManager::startLevel4() {
+    level4.StartLevel();
 }
 
-void GameManager::StartLevel5() {
-    Level5.StartLevel();
+void GameManager::startLevel5() {
+    level5.startLevel();
 }
 
-void GameManager::Win() {
+void GameManager::win() {
     std::cout << "Ты победил :D" << std::endl;
 }
 
-void GameManager::Lose() {
+void GameManager::lose() {
     std::cout << "Ты проиграл" << std::endl;
 }
 
-void GameManager::CompleteLevel1() {
-    StartLevel2();
+void GameManager::completeLevel1() {
+    startLevel2();
 }
 
-void GameManager::CompleteLevel2() {
-    StartLevel3();
+void GameManager::completeLevel2() {
+    startLevel3();
 }
 
-void GameManager::CompleteLevel3() {
-    StartLevel4();
+void GameManager::completeLevel3() {
+    startLevel4();
 }
 
-void GameManager::CompleteLevel4() {
-    StartLevel5();
+void GameManager::completeLevel4() {
+    startLevel5();
 }

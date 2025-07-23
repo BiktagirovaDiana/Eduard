@@ -13,22 +13,22 @@ private:
     static int rpg_;
 
 public:
-    static void InfoPlayer();
+    static void infoPlayer();
 
     // Getters
-    static int GetInfluence();
-    static int GetHP();
-    static int GetMoney();
-    static int GetGun();
-    static int GetGrenade();
-    static int GetRPG();
+    static int getInfluence();
+    static int getHP();
+    static int getMoney();
+    static int getGun();
+    static int getGrenade();
+    static int getRPG();
 
     // Setters
-    static int SetInfluence(int x);
-    static int SetHP(int x);
-    static int SetMoney(int x);
-    static int SetGun(int x);
-    static int SetGrenade(int x);
-    static int SetRPG(int x);
+    static int setInfluence(int x);
+    static int setHP(int x);
+    static int setMoney(int x);
+    static int setGun(int x);
+    static int setGrenade(int x);
+    static int setRPG(int x);
 };
 

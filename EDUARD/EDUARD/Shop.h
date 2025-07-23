@@ -12,10 +12,10 @@ private:
     static int priceRPG_;
 
 public:
-    static void InfoShop();
-    static void ChoiceBuy();
-    static void BuyOrNot();
-    static void BuyCartridges();
-    static void BuyGrenade();
-    static void BuyRPG();
+    static void infoShop();
+    static void choiceBuy();
+    static void buyOrNot();
+    static void buyCartridges();
+    static void buyGrenade();
+    static void buyRPG();
 };

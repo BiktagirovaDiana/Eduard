@@ -7,7 +7,7 @@ int Shop::priceCartridges_ = 500;
 int Shop::priceGrenade_ = 1500;
 int Shop::priceRPG_ = 2000;
 
-void Shop::InfoShop()
+void Shop::infoShop()
 {
     std::cout << Text::GetText("shop", "shopTitle") << std::endl;
 
@@ -36,7 +36,7 @@ void Shop::InfoShop()
     }
 }
 
-void Shop::ChoiceBuy()
+void Shop::choiceBuy()
 {
     std::cout << Text::GetText("shop", "buyPrompt") << std::endl;
     std::cout << Text::GetText("shop", "buyOption1") << std::endl;
@@ -47,14 +47,14 @@ void Shop::ChoiceBuy()
     std::cin >> choice;
 
     switch (choice) {
-    case 1: BuyCartridges(); break;
-    case 2: BuyGrenade(); break;
-    case 3: BuyRPG(); break;
-    default: ChoiceBuy(); break;
+    case 1: buyCartridges(); break;
+    case 2: buyGrenade(); break;
+    case 3: buyRPG(); break;
+    default: choiceBuy(); break;
     }
 }
 
-void Shop::BuyOrNot()
+void Shop::buyOrNot()
 {
     std::cout << Text::GetText("shop", "buyWeaponPrompt") << std::endl;
     std::cout << Text::GetText("shop", "buyOptionNo") << std::endl;
@@ -65,16 +65,16 @@ void Shop::BuyOrNot()
 
     switch (choice) {
     case 1: break;
-    case 2: InfoShop(); ChoiceBuy(); break;
-    default: BuyOrNot(); break;
+    case 2: infoShop(); choiceBuy(); break;
+    default: buyOrNot(); break;
     }
 }
 
-void Shop::BuyCartridges()
+void Shop::buyCartridges()
 {
-    if (PlayerController::GetMoney() >= priceCartridges_) {
-        PlayerController::SetMoney(PlayerController::GetMoney() - priceCartridges_);
-        PlayerController::SetGun(PlayerController::GetGun() + 8);
+    if (PlayerController::getMoney() >= priceCartridges_) {
+        PlayerController::setMoney(PlayerController::getMoney() - priceCartridges_);
+        PlayerController::setGun(PlayerController::getGun() + 8);
         std::cout << Text::GetText("shop", "cartridgesBought") << std::endl;
     }
     else {
@@ -82,12 +82,12 @@ void Shop::BuyCartridges()
     }
 }
 
-void Shop::BuyGrenade()
+void Shop::buyGrenade()
 {
     if (level_ >= 2) {
-        if (PlayerController::GetMoney() >= priceGrenade_) {
-            PlayerController::SetMoney(PlayerController::GetMoney() - priceGrenade_);
-            PlayerController::SetGrenade(PlayerController::GetGrenade() + 4);
+        if (PlayerController::getMoney() >= priceGrenade_) {
+            PlayerController::setMoney(PlayerController::getMoney() - priceGrenade_);
+            PlayerController::setGrenade(PlayerController::getGrenade() + 4);
             std::cout << Text::GetText("shop", "grenadesBought") << std::endl;
         }
         else {
@@ -96,12 +96,12 @@ void Shop::BuyGrenade()
     }
 }
 
-void Shop::BuyRPG()
+void Shop::buyRPG()
 {
     if (level_ >= 4) {
-        if (PlayerController::GetMoney() >= priceRPG_) {
-            PlayerController::SetMoney(PlayerController::GetMoney() - priceRPG_);
-            PlayerController::SetRPG(PlayerController::GetRPG() + 3);
+        if (PlayerController::getMoney() >= priceRPG_) {
+            PlayerController::setMoney(PlayerController::getMoney() - priceRPG_);
+            PlayerController::setRPG(PlayerController::getRPG() + 3);
             std::cout << Text::GetText("shop", "rpgBought") << std::endl;
         }
         else {

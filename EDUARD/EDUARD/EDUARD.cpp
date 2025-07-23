@@ -10,6 +10,6 @@ int main() {
     // Загрузка текстов из JSON
     Text::LoadTexts("texts.json");
 
-    GameManager::StartLevel1();
+    GameManager::startLevel1();
     return 0;
 }

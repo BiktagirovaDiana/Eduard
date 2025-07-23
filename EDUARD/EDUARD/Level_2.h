@@ -10,24 +10,24 @@ class Shop;
 class Level_2
 {
 private:
-    int Killers = 0;
+    int killers_ = 0;
     Shop& shop;
-    Enemies enemy;
-    int spent;
+    Enemies enemy_;
+    int spent_;
 
 public:
-    Level_2(Shop& shopRef) : shop(shopRef), enemy(60), spent(0) {}
+    Level_2(Shop& shopRef) : shop(shopRef), enemy_(60), spent_(0) {}
 
-    void StartLevel();
+    void startLevel();
     // �����
-    void Attack();
+    void attack();
     // �������
-    void Trap();
+    void trap();
     // �����������
-    void PeopleAttack();
-    void AttackPlace();
-    void StrategyAttack();
+    void peopleAttack();
+    void attackPlace();
+    void strategyAttack();
     // ��������� �����
-    void ContinueStrat();
-    void FinalPart();
+    void continueStrat();
+    void finalPart();
 };

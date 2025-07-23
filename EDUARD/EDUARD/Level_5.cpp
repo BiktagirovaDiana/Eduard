@@ -2,29 +2,29 @@
 #include "GameManager.h"
 #include "Shop.h"
 
-void Level_5::StartLevel()
+void Level_5::startLevel()
 {
     int choice = 0;
-    PlayerController::InfoPlayer();
+    PlayerController::infoPlayer();
     std::cout << Text::GetText("level5", "helloPablo5") << std::endl;
     std::cin >> choice;
 
     switch (choice)
     {
     case 1:
-        Meeting();
+        meeting();
         break;
     case 2:
-        AttackChapo();
+        attackChapo();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        StartLevel();
+        startLevel();
         break;
     }
 }
 
-void Level_5::Meeting()
+void Level_5::meeting()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "meeting") << std::endl;
@@ -33,19 +33,19 @@ void Level_5::Meeting()
     switch (choice)
     {
     case 1:
-        GameManager::Lose();
+        GameManager::lose();
         break;
     case 2:
-        AttackChapo();
+        attackChapo();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        Meeting();
+        meeting();
         break;
     }
 }
 
-void Level_5::AttackChapo()
+void Level_5::attackChapo()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "attackChapo") << std::endl;
@@ -57,14 +57,14 @@ void Level_5::AttackChapo()
         Friend();
         break;
     case 2:
-        Trap();
+        trap();
         break;
     case 3:
-        AttackPlane();
+        attackPlane();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        AttackChapo();
+        attackChapo();
         break;
     }
 }
@@ -78,13 +78,13 @@ void Level_5::Friend()
     switch (choice)
     {
     case 1:
-        AttackPlane();
+        attackPlane();
         break;
     case 2:
-        AttackPlane();
+        attackPlane();
         break;
     case 3:
-        AttackChapo();
+        attackChapo();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
@@ -93,17 +93,17 @@ void Level_5::Friend()
     }
 }
 
-void Level_5::Trap()
+void Level_5::trap()
 {
     std::cout << Text::GetText("level5", "trap") << std::endl;
-    AttackChapo();
+    attackChapo();
 }
 
-void Level_5::AttackPlane()
+void Level_5::attackPlane()
 {
-    if (PlayerController::GetMoney() < 1500) {
+    if (PlayerController::getMoney() < 1500) {
         std::cout << Text::GetText("common", "beforeLose") << std::endl;
-        GameManager::Lose();
+        GameManager::lose();
         return;
     }
 
@@ -114,21 +114,21 @@ void Level_5::AttackPlane()
     switch (choice)
     {
     case 1:
-        PlayerController::SetMoney(0);
-        AttackPlane2();
+        PlayerController::setMoney(0);
+        attackPlane2();
         break;
     case 2:
-        PlayerController::SetMoney(PlayerController::GetMoney() - 1500);
-        AttackPlane2();
+        PlayerController::setMoney(PlayerController::getMoney() - 1500);
+        attackPlane2();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        AttackPlane();
+        attackPlane();
         break;
     }
 }
 
-void Level_5::AttackPlane2()
+void Level_5::attackPlane2()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "attackPlane2") << std::endl;
@@ -137,7 +137,7 @@ void Level_5::AttackPlane2()
     switch (choice)
     {
     case 1:
-        TrapStrategy();
+        trapStrategy();
         break;
     case 2:
 
@@ -145,12 +145,12 @@ void Level_5::AttackPlane2()
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        AttackPlane2();
+        attackPlane2();
         break;
     }
 }
 
-void Level_5::TrapStrategy()
+void Level_5::trapStrategy()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "trapStrategy") << std::endl;
@@ -159,22 +159,22 @@ void Level_5::TrapStrategy()
     switch (choice)
     {
     case 1:
-        TrapMargo();
+        trapMargo();
         break;
     case 2:
-        AttackStrategy();
+        attackStrategy();
         break;
     case 3:
-        Surveillance();
+        surveillance();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        TrapStrategy();
+        trapStrategy();
         break;
     }
 }
 
-void Level_5::TrapMargo()
+void Level_5::trapMargo()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "trapMargo") << std::endl;
@@ -183,20 +183,20 @@ void Level_5::TrapMargo()
     switch (choice)
     {
     case 1:
-        DeathMargo();
+        deathMargo();
         break;
     case 2:
-        shop.BuyOrNot();
-        AttackStrategy();
+        shop_.buyOrNot();
+        attackStrategy();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        TrapMargo();
+        trapMargo();
         break;
     }
 }
 
-void Level_5::DeathMargo()
+void Level_5::deathMargo()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "deathMargo") << std::endl;
@@ -205,52 +205,52 @@ void Level_5::DeathMargo()
     switch (choice)
     {
     case 1:
-        if (PlayerController::GetRPG() >= 5)
+        if (PlayerController::getRPG() >= 5)
         {
-            PlayerController::SetRPG(PlayerController::GetRPG() - 5);
-            enemy.takeDamage(3, 5);
+            PlayerController::setRPG(PlayerController::getRPG() - 5);
+            enemy_.takeDamage(3, 5);
             std::cout << Text::GetText("level5", "winSad") << std::endl;
         }
         else
         {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 2:
-        if (PlayerController::GetGrenade() >= 10)
+        if (PlayerController::getGrenade() >= 10)
         {
-            PlayerController::SetGrenade(PlayerController::GetGrenade() - 10);
-            enemy.takeDamage(2, 10);
+            PlayerController::setGrenade(PlayerController::getGrenade() - 10);
+            enemy_.takeDamage(2, 10);
             std::cout << Text::GetText("level5", "winSad") << std::endl;
         }
         else
         {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 3:
-        if (PlayerController::GetGun() >= 20)
+        if (PlayerController::getGun() >= 20)
         {
-            PlayerController::SetGun(PlayerController::GetGun() - 20);
-            enemy.takeDamage(1, 20);
+            PlayerController::setGun(PlayerController::getGun() - 20);
+            enemy_.takeDamage(1, 20);
             std::cout << Text::GetText("level5", "winSad") << std::endl;
         }
         else
         {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        DeathMargo();
+        deathMargo();
         break;
     }
 }
 
-void Level_5::Surveillance()
+void Level_5::surveillance()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "surveillance") << std::endl;
@@ -259,52 +259,52 @@ void Level_5::Surveillance()
     switch (choice)
     {
     case 1:
-        if (PlayerController::GetRPG() >= 5)
+        if (PlayerController::getRPG() >= 5)
         {
-            PlayerController::SetRPG(PlayerController::GetRPG() - 5);
-            enemy.takeDamage(3, 5);
+            PlayerController::setRPG(PlayerController::getRPG() - 5);
+            enemy_.takeDamage(3, 5);
             std::cout << Text::GetText("level5", "winShort") << std::endl;
         }
         else
         {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 2:
-        if (PlayerController::GetGrenade() >= 10)
+        if (PlayerController::getGrenade() >= 10)
         {
-            PlayerController::SetGrenade(PlayerController::GetGrenade() - 10);
-            enemy.takeDamage(2, 10);
+            PlayerController::setGrenade(PlayerController::getGrenade() - 10);
+            enemy_.takeDamage(2, 10);
             std::cout << Text::GetText("level5", "winShort") << std::endl;
         }
         else
         {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 3:
-        if (PlayerController::GetGun() >= 20)
+        if (PlayerController::getGun() >= 20)
         {
-            PlayerController::SetGun(PlayerController::GetGun() - 20);
-            enemy.takeDamage(1, 20);
+            PlayerController::setGun(PlayerController::getGun() - 20);
+            enemy_.takeDamage(1, 20);
             std::cout << Text::GetText("level5", "winShort") << std::endl;
         }
         else
         {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        Surveillance();
+        surveillance();
         break;
     }
 }
 
-void Level_5::AttackStrategy()
+void Level_5::attackStrategy()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "attackStrategy") << std::endl;
@@ -313,19 +313,19 @@ void Level_5::AttackStrategy()
     switch (choice)
     {
     case 1:
-        AttackStrategy2();
+        attackStrategy2();
         break;
     case 2:
-        AttackStrategy2();
+        attackStrategy2();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        AttackStrategy();
+        attackStrategy();
         break;
     }
 }
 
-void Level_5::AttackStrategy2()
+void Level_5::attackStrategy2()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "attackStrategy2") << std::endl;
@@ -334,19 +334,19 @@ void Level_5::AttackStrategy2()
     switch (choice)
     {
     case 1:
-        AttackStrategy3();
+        attackStrategy3();
         break;
     case 2:
-        AttackStrategy3();
+        attackStrategy3();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        AttackStrategy2();
+        attackStrategy2();
         break;
     }
 }
 
-void Level_5::AttackStrategy3()
+void Level_5::attackStrategy3()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "attackStrategy3") << std::endl;
@@ -355,37 +355,37 @@ void Level_5::AttackStrategy3()
     switch (choice)
     {
     case 1:
-        IfDefense();
+        ifDefense();
         break;
     case 2:
         std::cout << Text::GetText("level5", "ifAttack") << std::endl;
-        HowContinue();
+        howContinue();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        AttackStrategy3();
+        attackStrategy3();
         break;
     }
 }
 
-void Level_5::IfDefense()
+void Level_5::ifDefense()
 {
-    if (PlayerController::GetGun() >= 4) {
+    if (PlayerController::getGun() >= 4) {
         std::cout << Text::GetText("level5", "ifDefense") << std::endl;
-        PlayerController::SetGun(PlayerController::GetGun() - 4);
-        PlayerController::SetHP(PlayerController::GetHP() - 20);
-        enemy.takeDamage(1, 4);
-        HowContinue();
+        PlayerController::setGun(PlayerController::getGun() - 4);
+        PlayerController::setHP(PlayerController::getHP() - 20);
+        enemy_.takeDamage(1, 4);
+        howContinue();
     }
     else {
         std::cout << Text::GetText("common", "beforeLose") << std::endl;
-        GameManager::Lose();
+        GameManager::lose();
     }
 }
 
-void Level_5::HowContinue()
+void Level_5::howContinue()
 {
-    if (PlayerController::GetHP() > 0) {
+    if (PlayerController::getHP() > 0) {
         int choice = 0;
         std::cout << Text::GetText("level5", "howContinue") << std::endl;
         std::cin >> choice;
@@ -393,56 +393,56 @@ void Level_5::HowContinue()
         switch (choice)
         {
         case 1:
-            if (PlayerController::GetGun() >= 8) {
-                PlayerController::SetGun(PlayerController::GetGun() - 8);
-                PlayerController::SetHP(PlayerController::GetHP() - 20);
-                enemy.takeDamage(1, 8);
+            if (PlayerController::getGun() >= 8) {
+                PlayerController::setGun(PlayerController::getGun() - 8);
+                PlayerController::setHP(PlayerController::getHP() - 20);
+                enemy_.takeDamage(1, 8);
                 std::cout << Text::GetText("level5", "ifPatrons") << std::endl;
-                GameManager::Lose();
+                GameManager::lose();
             }
             else {
                 std::cout << Text::GetText("level5", "poorPreparation") << std::endl;
-                GameManager::Lose();
+                GameManager::lose();
             }
             break;
         case 2:
-            if (PlayerController::GetRPG() >= 2) {
-                PlayerController::SetRPG(PlayerController::GetRPG() - 2);
-                PlayerController::SetHP(PlayerController::GetHP() - 20);
-                enemy.takeDamage(3, 2);
-                RPGorGrenade();
+            if (PlayerController::getRPG() >= 2) {
+                PlayerController::setRPG(PlayerController::getRPG() - 2);
+                PlayerController::setHP(PlayerController::getHP() - 20);
+                enemy_.takeDamage(3, 2);
+                rpgOrGrenade();
             }
             else {
                 std::cout << Text::GetText("level5", "poorPreparation") << std::endl;
-                GameManager::Lose();
+                GameManager::lose();
             }
             break;
         case 3:
-            if (PlayerController::GetGrenade() >= 4) {
-                PlayerController::SetGrenade(PlayerController::GetGrenade() - 4);
-                PlayerController::SetHP(PlayerController::GetHP() - 20);
-                enemy.takeDamage(2, 4);
-                RPGorGrenade();
+            if (PlayerController::getGrenade() >= 4) {
+                PlayerController::setGrenade(PlayerController::getGrenade() - 4);
+                PlayerController::setHP(PlayerController::getHP() - 20);
+                enemy_.takeDamage(2, 4);
+                rpgOrGrenade();
             }
             else {
                 std::cout << Text::GetText("level5", "poorPreparation") << std::endl;
-                GameManager::Lose();
+                GameManager::lose();
             }
             break;
         default:
             std::cout << Text::GetText("common", "defaultButton") << std::endl;
-            HowContinue();
+            howContinue();
             break;
         }
     }
     else
     {
         std::cout << Text::GetText("common", "beforeLose") << std::endl;
-        GameManager::Lose();
+        GameManager::lose();
     }
 }
 
-void Level_5::RPGorGrenade()
+void Level_5::rpgOrGrenade()
 {
     int choice = 0;
     std::cout << Text::GetText("level5", "rpgOrGrenade") << std::endl;
@@ -451,47 +451,47 @@ void Level_5::RPGorGrenade()
     switch (choice)
     {
     case 1:
-        if (PlayerController::GetGun() >= 3) {
-            PlayerController::SetGun(PlayerController::GetGun() - 3);
-            enemy.takeDamage(1, 3);
+        if (PlayerController::getGun() >= 3) {
+            PlayerController::setGun(PlayerController::getGun() - 3);
+            enemy_.takeDamage(1, 3);
             std::cout << Text::GetText("level5", "noRPG") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 2:
-        if (PlayerController::GetGrenade() >= 3) {
-            PlayerController::SetGrenade(PlayerController::GetGrenade() - 3);
-            enemy.takeDamage(2, 3);
+        if (PlayerController::getGrenade() >= 3) {
+            PlayerController::setGrenade(PlayerController::getGrenade() - 3);
+            enemy_.takeDamage(2, 3);
             std::cout << Text::GetText("level5", "noRPG") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 3:
-        if (PlayerController::GetRPG() >= 2) {
-            PlayerController::SetRPG(PlayerController::GetRPG() - 2);
-            enemy.takeDamage(3, 2);
-            PlayerController::SetInfluence(PlayerController::GetInfluence() + 100);
-            PlayerController::SetMoney(PlayerController::GetMoney() + 1000);
-            PlayerController::SetHP(100);
+        if (PlayerController::getRPG() >= 2) {
+            PlayerController::setRPG(PlayerController::getRPG() - 2);
+            enemy_.takeDamage(3, 2);
+            PlayerController::setInfluence(PlayerController::getInfluence() + 100);
+            PlayerController::setMoney(PlayerController::getMoney() + 1000);
+            PlayerController::setHP(100);
             std::cout << Text::GetText("level5", "winFinal") << std::endl;
-            GameManager::Win();
+            GameManager::win();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        RPGorGrenade();
+        rpgOrGrenade();
         break;
     }
 }

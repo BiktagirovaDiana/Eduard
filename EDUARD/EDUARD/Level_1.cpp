@@ -1,29 +1,29 @@
 #include "Level_1.h"
 #include "Text.h"
 
-void Level_1::StartLevel()
+void Level_1::startLevel()
 {
     int choice = 0;
-    PlayerController::InfoPlayer();
+    PlayerController::infoPlayer();
     std::cout << Text::GetText("level1", "helloPablo1") << std::endl;
     std::cin >> choice;
 
     switch (choice)
     {
     case 1:
-        DestroyEnemy();
+        destroyEnemy();
         break;
     case 2:
-        Negotiations();
+        negotiations();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        StartLevel();
+        startLevel();
         break;
     }
 }
 
-void Level_1::DestroyEnemy()
+void Level_1::destroyEnemy()
 {
     int choice = 0;
     std::cout << Text::GetText("level1", "strategy1") << std::endl;
@@ -32,25 +32,25 @@ void Level_1::DestroyEnemy()
     switch (choice)
     {
     case 1:
-        shop.BuyOrNot();
-        PeopleDesert();
+        shop_.buyOrNot();
+        peopleDesert();
         break;
     case 2:
-        shop.BuyOrNot();
-        EnemysLair();
+        shop_.buyOrNot();
+        enemysLair();
         break;
     case 3:
         std::cout << Text::GetText("level1", "nothing") << std::endl;
-        DestroyEnemy();
+        destroyEnemy();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        DestroyEnemy();
+        destroyEnemy();
         break;
     }
 }
 
-void Level_1::Negotiations()
+void Level_1::negotiations()
 {
     int choice = 0;
     std::cout << Text::GetText("level1", "negotiations") << std::endl;
@@ -59,41 +59,41 @@ void Level_1::Negotiations()
     switch (choice)
     {
     case 1:
-        if (PlayerController::GetMoney() >= 2000) {
+        if (PlayerController::getMoney() >= 2000) {
             std::cout << Text::GetText("level1", "winNegotiations1") << std::endl;
-            PlayerController::SetInfluence(PlayerController::GetInfluence() - 15);
-            PlayerController::SetMoney(PlayerController::GetMoney() - 2000);
+            PlayerController::setInfluence(PlayerController::getInfluence() - 15);
+            PlayerController::setMoney(PlayerController::getMoney() - 2000);
         }
         else
         {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 2:
-        if (PlayerController::GetMoney() >= 1000) {
+        if (PlayerController::getMoney() >= 1000) {
             std::cout << Text::GetText("level1", "winNegotiations2") << std::endl;
-            PlayerController::SetInfluence(PlayerController::GetInfluence() - 10);
-            PlayerController::SetMoney(PlayerController::GetMoney() - 1000);
+            PlayerController::setInfluence(PlayerController::getInfluence() - 10);
+            PlayerController::setMoney(PlayerController::getMoney() - 1000);
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 3:
         std::cout << Text::GetText("level1", "loseNegotiations") << std::endl;
-        GameManager::Lose();
+        GameManager::lose();
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        Negotiations();
+        negotiations();
         break;
     }
-    PlayerController::InfoPlayer();
+    PlayerController::infoPlayer();
 }
 
-void Level_1::PeopleDesert()
+void Level_1::peopleDesert()
 {
     int choice = 0;
     std::cout << Text::GetText("level1", "peopleDesert") << std::endl;
@@ -102,57 +102,57 @@ void Level_1::PeopleDesert()
     switch (choice)
     {
     case 1:
-        if (PlayerController::GetMoney() >= 700) {
-            Killers = 2;
-            PlayerController::SetMoney(PlayerController::GetMoney() - 700);
-            StrategyDesert();
+        if (PlayerController::getMoney() >= 700) {
+            killers_ = 2;
+            PlayerController::setMoney(PlayerController::getMoney() - 700);
+            strategyDesert();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 2:
-        if (PlayerController::GetMoney() >= 750) {
-            Killers = 2;
-            PlayerController::SetMoney(PlayerController::GetMoney() - 750);
-            StrategyDesert();
+        if (PlayerController::getMoney() >= 750) {
+            killers_ = 2;
+            PlayerController::setMoney(PlayerController::getMoney() - 750);
+            strategyDesert();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 3:
-        if (PlayerController::GetMoney() >= 1100) {
-            Killers = 4;
-            PlayerController::SetMoney(PlayerController::GetMoney() - 1100);
-            StrategyDesert();
+        if (PlayerController::getMoney() >= 1100) {
+            killers_ = 4;
+            PlayerController::setMoney(PlayerController::getMoney() - 1100);
+            strategyDesert();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 4:
-        if (PlayerController::GetMoney() >= 1500) {
-            Killers = 4;
-            PlayerController::SetMoney(PlayerController::GetMoney() - 1500);
-            StrategyDesert();
+        if (PlayerController::getMoney() >= 1500) {
+            killers_ = 4;
+            PlayerController::setMoney(PlayerController::getMoney() - 1500);
+            strategyDesert();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        PeopleDesert();
+        peopleDesert();
         break;
     }
 }
 
-void Level_1::StrategyDesert()
+void Level_1::strategyDesert()
 {
     int choice = 0;
     std::cout << Text::GetText("level1", "strategyDesert") << std::endl;
@@ -161,65 +161,65 @@ void Level_1::StrategyDesert()
     switch (choice)
     {
     case 1:
-        if (PlayerController::GetGun() >= 4) {
+        if (PlayerController::getGun() >= 4) {
             std::cout << Text::GetText("level1", "desertAttack") << std::endl;
-            enemy.takeDamage(1, 4);
-            PlayerController::SetGun(PlayerController::GetGun() - 4);
-            LoseOrWin();
+            enemy_.takeDamage(1, 4);
+            PlayerController::setGun(PlayerController::getGun() - 4);
+            loseOrWin();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 2:
-        if (PlayerController::GetGun() >= 4) {
+        if (PlayerController::getGun() >= 4) {
             std::cout << Text::GetText("level1", "desertDefense") << std::endl;
-            enemy.takeDamage(1, 4);
-            PlayerController::SetGun(PlayerController::GetGun() - 4);
-            PlayerController::SetHP(PlayerController::GetHP() - 20);
-            LoseOrWin();
+            enemy_.takeDamage(1, 4);
+            PlayerController::setGun(PlayerController::getGun() - 4);
+            PlayerController::setHP(PlayerController::getHP() - 20);
+            loseOrWin();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        StrategyDesert();
+        strategyDesert();
         break;
     }
-    PlayerController::InfoPlayer();
+    PlayerController::infoPlayer();
 }
 
-void Level_1::LoseOrWin()
+void Level_1::loseOrWin()
 {
-    if (Killers == 4)
+    if (killers_ == 4)
     {
-        if (PlayerController::GetGun() >= 4) {
+        if (PlayerController::getGun() >= 4) {
             std::cout << Text::GetText("level1", "survive") << std::endl;
-            enemy.takeDamage(1, 4);
-            PlayerController::SetGun(PlayerController::GetGun() - 4);
+            enemy_.takeDamage(1, 4);
+            PlayerController::setGun(PlayerController::getGun() - 4);
             std::cout << Text::GetText("level1", "win1") << std::endl;
-            PlayerController::SetMoney(PlayerController::GetMoney() + 1000);
-            PlayerController::SetInfluence(PlayerController::GetInfluence() + 10);
-            PlayerController::SetHP(PlayerController::GetHP() + 20);
-            GameManager::CompleteLevel1();
+            PlayerController::setMoney(PlayerController::getMoney() + 1000);
+            PlayerController::setInfluence(PlayerController::getInfluence() + 10);
+            PlayerController::setHP(PlayerController::getHP() + 20);
+            GameManager::completeLevel1();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
     }
     else {
         std::cout << Text::GetText("level1", "death1") << std::endl;
-        GameManager::Lose();
+        GameManager::lose();
     }
-    PlayerController::InfoPlayer();
+    PlayerController::infoPlayer();
 }
 
-void Level_1::EnemysLair()
+void Level_1::enemysLair()
 {
     int choice = 0;
     std::cout << Text::GetText("level1", "peopleLair") << std::endl;
@@ -228,84 +228,84 @@ void Level_1::EnemysLair()
     switch (choice)
     {
     case 1:
-        if (PlayerController::GetMoney() >= 700) {
-            Killers = 2;
-            PlayerController::SetMoney(PlayerController::GetMoney() - 700);
-            StrategyLair();
+        if (PlayerController::getMoney() >= 700) {
+            killers_ = 2;
+            PlayerController::setMoney(PlayerController::getMoney() - 700);
+            strategyLair();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 2:
-        if (PlayerController::GetMoney() >= 900) {
-            Killers = 3;
-            PlayerController::SetMoney(PlayerController::GetMoney() - 900);
-            StrategyLair();
+        if (PlayerController::getMoney() >= 900) {
+            killers_ = 3;
+            PlayerController::setMoney(PlayerController::getMoney() - 900);
+            strategyLair();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     case 3:
-        if (PlayerController::GetMoney() >= 1200) {
-            Killers = 4;
-            PlayerController::SetMoney(PlayerController::GetMoney() - 1200);
-            StrategyLair();
+        if (PlayerController::getMoney() >= 1200) {
+            killers_ = 4;
+            PlayerController::setMoney(PlayerController::getMoney() - 1200);
+            strategyLair();
         }
         else {
             std::cout << Text::GetText("common", "beforeLose") << std::endl;
-            GameManager::Lose();
+            GameManager::lose();
         }
         break;
     default:
         std::cout << Text::GetText("common", "defaultButton") << std::endl;
-        EnemysLair();
+        enemysLair();
         break;
     }
 }
 
-void Level_1::StrategyLair()
+void Level_1::strategyLair()
 {
-    if (PlayerController::GetGun() >= 2) {
-        PlayerController::SetGun(PlayerController::GetGun() - 2);
-        PlayerController::SetHP(PlayerController::GetHP() - 15);
+    if (PlayerController::getGun() >= 2) {
+        PlayerController::setGun(PlayerController::getGun() - 2);
+        PlayerController::setHP(PlayerController::getHP() - 15);
 
         int choice = 0;
         std::cout << Text::GetText("level1", "attackLair") << std::endl;
-        enemy.takeDamage(1, 2);
-        PlayerController::InfoPlayer();
+        enemy_.takeDamage(1, 2);
+        PlayerController::infoPlayer();
         std::cin >> choice;
 
         switch (choice)
         {
         case 1:
-            shop.BuyOrNot();
-            PeopleDesert();
+            shop_.buyOrNot();
+            peopleDesert();
             break;
         case 2:
-            if (PlayerController::GetMoney() >= 3000) {
+            if (PlayerController::getMoney() >= 3000) {
                 std::cout << Text::GetText("level1", "win2") << std::endl;
-                PlayerController::SetInfluence(PlayerController::GetInfluence() - 15);
-                PlayerController::SetMoney(PlayerController::GetMoney() - 3000);
-                GameManager::CompleteLevel1();
+                PlayerController::setInfluence(PlayerController::getInfluence() - 15);
+                PlayerController::setMoney(PlayerController::getMoney() - 3000);
+                GameManager::completeLevel1();
             }
             else {
                 std::cout << Text::GetText("common", "beforeLose") << std::endl;
-                GameManager::Lose();
+                GameManager::lose();
             }
             break;
         default:
             std::cout << Text::GetText("common", "defaultButton") << std::endl;
-            StrategyLair();
+            strategyLair();
             break;
         }
     }
     else {
         std::cout << Text::GetText("common", "beforeLose") << std::endl;
-        GameManager::Lose();
+        GameManager::lose();
     }
-    PlayerController::InfoPlayer();
+    PlayerController::infoPlayer();
 }

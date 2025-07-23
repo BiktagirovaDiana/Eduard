@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "D:\\GitHub\\Eduard\\EDUARD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Text.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Text.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\PlayerController.h||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\PlayerController.h||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Level_5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Level_3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Level_4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Level_2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Level_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Enemies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Enemies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Level_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -27,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\texts.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Level_5.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Level_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -41,14 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Level_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\PlayerController.h||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6592A7C4-762C-4E28-890C-5337F778E0CC}|EDUARD\\EDUARD.vcxproj|solutionrelative:EDUARD\\PlayerController.h||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,22 +86,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
+              "Title": "Text.h",
+              "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Text.h",
+              "RelativeDocumentMoniker": "EDUARD\\Text.h",
+              "ToolTip": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Text.h",
+              "RelativeToolTip": "EDUARD\\Text.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-10T12:16:02.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shop.h",
+              "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Shop.h",
+              "RelativeDocumentMoniker": "EDUARD\\Shop.h",
+              "ToolTip": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Shop.h",
+              "RelativeToolTip": "EDUARD\\Shop.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-10T12:14:19.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Level_3.h",
+              "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_3.h",
+              "RelativeDocumentMoniker": "EDUARD\\Level_3.h",
+              "ToolTip": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_3.h",
+              "RelativeToolTip": "EDUARD\\Level_3.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-10T12:14:15.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Level_4.h",
+              "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_4.h",
+              "RelativeDocumentMoniker": "EDUARD\\Level_4.h",
+              "ToolTip": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_4.h",
+              "RelativeToolTip": "EDUARD\\Level_4.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-10T12:14:14.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Level_2.h",
+              "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_2.h",
+              "RelativeDocumentMoniker": "EDUARD\\Level_2.h",
+              "ToolTip": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_2.h",
+              "RelativeToolTip": "EDUARD\\Level_2.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-10T12:14:11.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Level_1.h",
+              "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_1.h",
+              "RelativeDocumentMoniker": "EDUARD\\Level_1.h",
+              "ToolTip": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_1.h",
+              "RelativeToolTip": "EDUARD\\Level_1.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-10T12:14:08.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Enemies.h",
+              "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Enemies.h",
+              "RelativeDocumentMoniker": "EDUARD\\Enemies.h",
+              "ToolTip": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Enemies.h",
+              "RelativeToolTip": "EDUARD\\Enemies.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-10T12:12:32.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PlayerController.h",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\PlayerController.h",
               "RelativeDocumentMoniker": "EDUARD\\PlayerController.h",
               "ToolTip": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\PlayerController.h",
               "RelativeToolTip": "EDUARD\\PlayerController.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-10T10:30:18.831Z"
+              "WhenOpened": "2025-07-10T10:30:18.831Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "PlayerController.cpp",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\PlayerController.cpp",
               "RelativeDocumentMoniker": "EDUARD\\PlayerController.cpp",
@@ -81,11 +202,12 @@
               "RelativeToolTip": "EDUARD\\PlayerController.cpp",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-10T10:29:21.517Z"
+              "WhenOpened": "2025-07-10T10:29:21.517Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "Shop.cpp",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Shop.cpp",
               "RelativeDocumentMoniker": "EDUARD\\Shop.cpp",
@@ -93,11 +215,12 @@
               "RelativeToolTip": "EDUARD\\Shop.cpp",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-10T10:29:31.325Z"
+              "WhenOpened": "2025-07-10T10:29:31.325Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Level_5.h",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_5.h",
               "RelativeDocumentMoniker": "EDUARD\\Level_5.h",
@@ -105,11 +228,12 @@
               "RelativeToolTip": "EDUARD\\Level_5.h",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-10T10:13:32.412Z"
+              "WhenOpened": "2025-07-10T10:13:32.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Level_5.cpp",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_5.cpp",
               "RelativeDocumentMoniker": "EDUARD\\Level_5.cpp",
@@ -117,11 +241,12 @@
               "RelativeToolTip": "EDUARD\\Level_5.cpp",
               "ViewState": "AgIAANUBAAAAAAAAAAAAAOYBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-10T09:57:00.282Z"
+              "WhenOpened": "2025-07-10T09:57:00.282Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "texts.json",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\texts.json",
               "RelativeDocumentMoniker": "EDUARD\\texts.json",
@@ -133,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "Level_4.cpp",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_4.cpp",
               "RelativeDocumentMoniker": "EDUARD\\Level_4.cpp",
@@ -141,11 +266,12 @@
               "RelativeToolTip": "EDUARD\\Level_4.cpp",
               "ViewState": "AgIAAIEAAAAAAAAAAAAAAHkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-10T09:56:20.987Z"
+              "WhenOpened": "2025-07-10T09:56:20.987Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Level_3.cpp",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_3.cpp",
               "RelativeDocumentMoniker": "EDUARD\\Level_3.cpp",
@@ -153,11 +279,12 @@
               "RelativeToolTip": "EDUARD\\Level_3.cpp",
               "ViewState": "AgIAAJMAAAAAAAAAAAAAAK0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-10T09:54:29.392Z"
+              "WhenOpened": "2025-07-10T09:54:29.392Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Level_2.cpp",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_2.cpp",
               "RelativeDocumentMoniker": "EDUARD\\Level_2.cpp",
@@ -165,11 +292,12 @@
               "RelativeToolTip": "EDUARD\\Level_2.cpp",
               "ViewState": "AgIAALEAAAAAAAAAAAAAAB0BAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-10T09:51:50.067Z"
+              "WhenOpened": "2025-07-10T09:51:50.067Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "Level_1.cpp",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Level_1.cpp",
               "RelativeDocumentMoniker": "EDUARD\\Level_1.cpp",
@@ -182,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "GameManager.cpp",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\GameManager.cpp",
               "RelativeDocumentMoniker": "EDUARD\\GameManager.cpp",
@@ -194,15 +322,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Enemies.cpp",
               "DocumentMoniker": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Enemies.cpp",
               "RelativeDocumentMoniker": "EDUARD\\Enemies.cpp",
               "ToolTip": "D:\\GitHub\\Eduard\\EDUARD\\EDUARD\\Enemies.cpp",
               "RelativeToolTip": "EDUARD\\Enemies.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-09T16:48:22.599Z"
+              "WhenOpened": "2025-07-09T16:48:22.599Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -10,23 +10,23 @@ class Shop;
 class Level_1
 {
 private:
-    int Killers = 0;
-    Shop& shop;
-    Enemies enemy;
-    int spent;
+    int killers_ = 0;
+    Shop& shop_;
+    Enemies enemy_;
+    int spent_;
 
 public:
-    Level_1(Shop& shopRef) : shop(shopRef), enemy(40), spent(0) {}
+    Level_1(Shop& shopRef) : shop_(shopRef), enemy_(40), spent_(0) {}
 
-    void StartLevel();
+    void startLevel();
     // стратегии
-    void DestroyEnemy();
-    void Negotiations();
+    void destroyEnemy();
+    void negotiations();
     // бой в пустыне
-    void PeopleDesert();
-    void StrategyDesert();
-    void LoseOrWin();
+    void peopleDesert();
+    void strategyDesert();
+    void loseOrWin();
     // бой в логове врага
-    void EnemysLair();
-    void StrategyLair();
+    void enemysLair();
+    void strategyLair();
 };

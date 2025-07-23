@@ -10,18 +10,18 @@ class Shop;
 class Level_3
 {
 private:
-	Shop& shop;
-	Enemies enemy;
-	int spent;
+	Shop& shop_;
+	Enemies enemy_;
+	int spent_;
 public:
-	Level_3(Shop& shopRef) : shop(shopRef), enemy(30), spent(0) {}
+	Level_3(Shop& shopRef) : shop_(shopRef), enemy_(30), spent_(0) {}
 
-	void StartLevel();
-	void Meeting();
-	void NoMeeting();
-	void Shooting();
-	void Spy();
-	void CleverSpy();
-	void Laboratory();
-	void KidnapScientists();
+	void startLevel();
+	void meeting();
+	void noMeeting();
+	void shooting();
+	void spy();
+	void cleverSpy();
+	void laboratory();
+	void kidnapScientists();
 };

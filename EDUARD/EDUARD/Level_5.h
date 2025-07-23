@@ -11,30 +11,28 @@ class Shop;
 class Level_5
 {
 private:
-	int Killers = 0;
-	Shop& shop;
-	Enemies enemy;
-	int spent;
+	int killers_ = 0;
+	Shop& shop_;
+	Enemies enemy_;
+	int spent_;
 public:
-	Level_5(Shop& shopRef) : shop(shopRef), enemy(100), spent(0) {}
+	Level_5(Shop& shopRef) : shop_(shopRef), enemy_(100), spent_(0) {}
 
-	void StartLevel();
-	void Meeting();
-	void AttackChapo();
+	void startLevel();
+	void meeting();
+	void attackChapo();
 	void Friend();
-	void Trap();
-	void AttackPlane();
-	void AttackPlane2();
-	void TrapStrategy();
-	//void NeutralPlace();
-	//void NeutralPlace2();
-	void TrapMargo();
-	void DeathMargo();
-	void Surveillance();
-	void AttackStrategy();
-	void AttackStrategy2();
-	void AttackStrategy3();
-	void IfDefense();
-	void HowContinue();
-	void RPGorGrenade();
+	void trap();
+	void attackPlane();
+	void attackPlane2();
+	void trapStrategy();
+	void trapMargo();
+	void deathMargo();
+	void surveillance();
+	void attackStrategy();
+	void attackStrategy2();
+	void attackStrategy3();
+	void ifDefense();
+	void howContinue();
+	void rpgOrGrenade();
 };
